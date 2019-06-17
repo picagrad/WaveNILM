@@ -6,9 +6,9 @@ WaveNILM implementation in Keras, with Tensorflow backend as described in:
 If using this code in any research, please cite the original paper, seen above.
 
 ## Dependencies:
-Keras 2.2.2 
-Tensorflow 1.8.0 
-Sacred 0.7.4
+* Keras 2.2.2 
+* Tensorflow 1.8.0 
+* Sacred 0.7.4
 
 ## Installation instructions:
 The code was developed using pipenv, and the environment file is included in the repository
