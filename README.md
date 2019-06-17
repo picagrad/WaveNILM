@@ -16,6 +16,7 @@ The code was developed using pipenv, and the environment file is included in the
 * Copy pipfile.lock to the folder
 * run  **pipenv install**
 * clone repository to the work environement folder
+* Follow instruction in data/readme.md for copying or creating dataset files
 
 
 ## Running instructions:
