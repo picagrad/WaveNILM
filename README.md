@@ -19,8 +19,7 @@ The code was developed using pipenv, and the environment file is included in the
 
 
 ## Running instructions:
-Turn on environment using pipenv shell
-Then run code from src folder as follows:
-> python waveNILM.py with '\<optimizer name here\> \<config change values here\>'
+Turn on environment using **pipenv shell**. then run code from src folder as follows:
+> python waveNILM.py with <\optimizer name here\> \<config change values here\>'
 
 Please see code for addtional details on config values, optimizers, etc.
