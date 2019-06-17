@@ -11,13 +11,16 @@ If using this code in any research, please cite the original paper, seen above.
 * Sacred 0.7.4
 
 ## Installation instructions:
-The code was developed using pipenv, and the environment file is included in the repository
+The code was developed using pipenv*, and the environment file is included in the repository
 * Create a folder for the work environment
 * Copy pipfile.lock to the folder
-* run  **pipenv install**
+* run  **pipenv install --ignore-pipfile**
 * clone repository to the work environement folder
 * Follow instruction in data/readme.md for copying or creating dataset files
 
+
+To install pipenv itself run:
+> pip install pipenv
 
 ## Running instructions:
 Turn on environment using **pipenv shell**. then run code from src folder as follows:
