@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+keras = "*"
+tensorflow = "==1.8.0"
+sacred = "*"
+tensorflow-gpu = "==1.8.0"
+matplotlib = "==2.2.2"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
