@@ -14,8 +14,11 @@ If using this code in any research, please cite the original paper, seen above.
 The code was developed using pipenv*, and the environment file is included in the repository
 * Create a folder for the work environment
 * Copy pipfile.lock to the folder
-* run  **pipenv install --ignore-pipfile**
-* clone repository to the work environement folder
+* Run  
+> pipenv install --ignore-pipfile
+* Start the work environment using 
+> pipenv shell 
+* Clone repository to the work environement folder
 * Follow instruction in data/readme.md for copying or creating dataset files
 
 
