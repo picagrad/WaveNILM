@@ -22,7 +22,7 @@ The code was developed using pipenv*, and the environment file is included in th
 * Follow instruction in data/readme.md for copying or creating dataset files
 
 
-To install pipenv itself run:
+\* To install pipenv itself run:
 > pip install pipenv
 
 ## Running instructions:
