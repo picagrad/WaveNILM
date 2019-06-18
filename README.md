@@ -29,4 +29,17 @@ The code was developed using pipenv*, and the environment file is included in th
 Turn on environment using **pipenv shell**. then run code from src folder as follows:
 > python waveNILM.py with <\optimizer name here\> \<config change values here\>'
 
-Please see code for addtional details on config values, optimizers, etc.
+Currently configured optimizers include 'adam' and 'SGD', to include other optimizers, or to modify the optimizer parameters, see src/waveNILM.py'. Other controlable parameters include training length in samples, number of epochs to train, a cross validation flag, and more. For a full list of the parameters see 'src/waveNILM.py'
+
+Some example runing parameters:
+To run the noisy scenario on the full AMPds2 dataset, with active power as both input and output, with cross validation and adam optimizer simply run
+> python waveNILM.py with adam
+
+To run the same scenario but only on the first year of AMPds2, run:
+> python waveNILM.py with adam trn_len=525600
+
+To run a denoised scenario on appliances number 8,14,16, with all other parameters the same, run:
+> python waveNILM.py with adam app_inds=[8,14,16] noise_mode=0
+
+
+
