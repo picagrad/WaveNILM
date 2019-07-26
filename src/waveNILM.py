@@ -405,7 +405,7 @@ def create_data_and_run(model,input_path,sample_size,app_inds,n_epochs,data_len,
 	
 	# Cross validated training
 	if not cross_validate:
-		splice = [9]
+		splice = [0]
 	# Collect time stamp to avoid overwriting previous models
 	now = datetime.datetime.now().strftime('/%Y_%m_%d_%H%M')
 	spth = savepath + now
