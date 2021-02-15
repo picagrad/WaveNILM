@@ -262,7 +262,7 @@ def create_net(batch_size,depth,sample_size,app_inds,nb_filters,use_bias,res_l2,
 			# "Gate" output
 			gate_out = Conv1D(nb_filters[i], 2, dilation_rate=2 ** i, padding='causal', 
 				use_bias=use_bias,kernel_regularizer=l2(res_l2))(out)
-			gate__out = sigmoid(gate_out)
+			gate_out = sigmoid(gate_out)
 			
 			# Multiply signal by gate to get gated output
 			gated = Multiply()([signal_out, gate_out])
@@ -273,7 +273,7 @@ def create_net(batch_size,depth,sample_size,app_inds,nb_filters,use_bias,res_l2,
 				# Making copies of previous layer nodes if the number of filters  doesn't match
 				prev_ind = max(i-1,0)
 				if not nb_filters[i] == nb_filters[prev_ind]:
-					out = Lambda(extract_and_duplicate,arguments = {'reps':nb_filter[i]/nb_filter[prev_ind],'batch_size':batch_size,'sample_size':sample_size})(out)
+					out = Lambda(extract_and_duplicate,arguments = {'reps':nb_filters[i]/nb_filters[prev_ind],'batch_size':batch_size,'sample_size':sample_size})(out)
 				
 				# Creating residual
 				out = Add()([out,gated])
